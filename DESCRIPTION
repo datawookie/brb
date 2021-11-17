@@ -1,0 +1,23 @@
+Package: brb
+Type: Package
+Title: Social Media Utility Functions
+Version: 0.0.1
+Authors@R: 
+    c(person(given = c("Andrew", "B."),
+             family = "Collier",
+             role = c("aut", "cre", "cph"),
+             email = "andrew@fathomdata.dev"))
+Description: A collection of tools for working with social media packages.
+License: GPL-3
+Language: en-GB
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    httr,
+    janitor,
+    purrr,
+    stringi,
+    tibble,
+    tidyr
+RoxygenNote: 7.1.2
