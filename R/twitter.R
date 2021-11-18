@@ -5,6 +5,13 @@ create_token_no_browser <- function(
   access_token,
   access_secret
 ) {
+  log_debug("Twitter authentication:")
+  log_debug("Application name: ({nchar(app_name)}) {app_name}")
+  log_debug("Consumer Key:     ({nchar(consumer_key)}) {consumer_key}")
+  log_debug("Consumer Secret:  ({nchar(consumer_secret)}) {consumer_secret}")
+  log_debug("Access Token:     ({nchar(access_token)}) {access_token}")
+  log_debug("Access Secret:    ({nchar(access_secret)}) {access_secret}")
+
   app <- httr::oauth_app(app_name, consumer_key, consumer_secret)
   params <- list(as_header = TRUE)
   credentials <- list(oauth_token = access_token,
